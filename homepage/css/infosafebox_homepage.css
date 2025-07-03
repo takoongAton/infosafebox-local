@@ -363,6 +363,9 @@ div.layer.full .close button::after {transform:translate(-50%,-50%) rotate(-45de
 .unaccount_wrap .phonenumber_wrap button:disabled span {color:#888;}
 .unaccount_wrap .phonenumber_wrap div.item.focus {border-bottom-color:#000;}
 .unaccount_wrap .phonenumber_wrap p.error_txt {margin-top:0.66666em; color:#FF0000; font-size:14px; line-height:1.42857em;}
+@media only screen and (max-width:719px) {
+	.unaccount_wrap .phonenumber_wrap {margin-top:0;}
+}
 /* 리캡챠 관련 추가 */
 .unaccount_wrap .phonenumber_wrap div.item .recaptcha_area {display:inline-flex; align-items:center; margin-top:6px; padding-left:14px;}
 .unaccount_wrap .phonenumber_wrap div.item .recaptcha_area div.img {width:160px; height:36px; padding:5px; background-color:#f2f2f2;}
@@ -715,7 +718,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 .signTab button.active span {color:#fff;}
 
 .sign_wrap {margin-top:24px;}
-.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding: 40px 0 0; gap:10px;}
+.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding:40px 0 30px; gap:10px;}
 .sign_wrap .agree_wrap .row > strong {display:inline-block; min-width:84px; font-size:14px; white-space:nowrap;}
 
 .sign_wrap .agree_wrap .check_all {padding-left:3px;}
@@ -740,7 +743,7 @@ table.dataTable tbody td:first-of-type {padding-left:2em; text-align:left;}
 	.signTab button {height:72px;}
 	.signTab button span {font-size:20px;}
 
-	.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding:40px 0 0; gap:10px;}
+	.sign_wrap .agree_wrap .row {display:flex; align-items:flex-start; width:100%; padding:40px 0; gap:10px;}
 	.sign_wrap .agree_wrap .row > strong {min-width:118px; font-size:20px;}
 
 	.sign_wrap .agree_wrap .check_wrap {margin-left:50px;}
