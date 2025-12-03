@@ -264,7 +264,7 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 
 
 /* 로그인 버튼 */
-#confirmBtn {width:100%; height:56px; background-color:#2677ff; border-radius:5px; color:#fff; font-size:16px; line-height:1.5em; font-weight:700;}
+#confirmBtn {width:100%; height:56px; background-color:#222; border-radius:5px; color:#fff; font-size:16px; line-height:1.5em; font-weight:700;}
 #confirmBtn[disabled="disabled"] {opacity:0.5;}
 #confirmBtnbutton[disabled="disabled"] {opacity:0.5}
 #exitBtn {background-color:#fff; cursor:pointer;}
