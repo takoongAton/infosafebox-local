@@ -178,7 +178,7 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 .infosafebox_wrap .terms-agree input[type="checkbox"] + label {display:inline-flex; position:relative; top:auto; width:auto; margin:0;}
 
 .infosafebox_wrap .terms-agree input[type="checkbox"] + label span.checkmark {display:block; width:20px; height:20px; border:1px solid #ccc; border-radius:2px; background-color:#f2f2f2;}
-.infosafebox_wrap .terms-agree input[type="checkbox"]:checked + label span.checkmark {border:none; background-color:#2677FF; background-image:url('../images/common/check.png'); background-repeat:no-repeat; background-position:center; background-size:contain;}
+.infosafebox_wrap .terms-agree input[type="checkbox"]:checked + label span.checkmark {border:none; background-color:#00a397; background-image:url('../images/common/check.png'); background-repeat:no-repeat; background-position:center; background-size:contain;}
 
 .infosafebox_wrap .terms-agree .all_agree {display:flex; align-items:center; position:relative; margin:0; border-radius:5px 5px 0 0; border:1px solid #ddd; background-color:#fafafa;}
 .infosafebox_wrap .terms-agree .all_agree label {position:relative; margin:0;}
