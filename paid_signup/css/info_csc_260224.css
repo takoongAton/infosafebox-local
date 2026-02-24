@@ -20,7 +20,6 @@ button {border:0 none;}
 body {
 	font-family:-apple-system,'BlinkMacSystemFont', 'Noto Sans KR','Noto Sans CJK','Apple SD Gothic Neo', serif;
 	font-size:1em;
-	background-color:#ff6600;
 }
 
 @media screen and (max-width:320px) {
@@ -29,7 +28,7 @@ body {
 
 
 /* 전체 틀 */
-.infosafebox_wrap {min-width:280px; max-width:908px; margin:0 auto; background-color:#fff;}
+.infosafebox_wrap {min-width:280px; max-width:908px; margin:0 auto; background-color:#fff; overflow-x:hidden;}
 @media screen and (min-width:720px) {
 	.infosafebox_wrap {border:1px solid #ddd;}
 }
@@ -134,12 +133,19 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 .signUp_form.typeB .phoneNum {order:-1; transition:order 0.4s ease;}
 .signUp_form.typeB #auth_no_section {order:-1; transition:order 0.4s ease;}
 .signUp_form.typeB .confirm_wrap {order:0; transition:order 0.4s ease;}
-.signUp_form.typeB .confirm_wrap {position:sticky; position:-webkit-sticky; bottom:20px; left:0;}
+/* .signUp_form.typeB .confirm_wrap {position:sticky; position:-webkit-sticky; bottom:20px; left:0;} */
 
 .signUp_form.typeC .phoneNum {flex-direction:column; gap:16px}
 .signUp_form.typeC .phoneNum div {width:100%;}
 .signUp_form.typeC .phoneNum input,
 .signUp_form.typeC .phoneNum button {width:100%;}
+.signUp_form.typeC .phoneNum input:-webkit-autofill,
+.signUp_form.typeC .phoneNum input:-webkit-autofill:hover, 
+.signUp_form.typeC .phoneNum input:-webkit-autofill:focus, 
+.signUp_form.typeC .phoneNum input:-webkit-autofill:active {
+    /* 배경색을 흰색으로 고정 (원하는 색상으로 변경 가능) */
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
 
 
 
