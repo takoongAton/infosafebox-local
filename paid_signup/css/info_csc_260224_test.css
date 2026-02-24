@@ -139,30 +139,38 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 
 
 /* 통신사 선택 */
-.telecom ul.radio {display:flex; gap:6px; width:100%; margin:0; padding:0; list-style:none;}
-.telecom ul.radio::after {content:""; display:block; height:0; clear:both;}
-.telecom ul.radio li {display:block; float:left; position:relative; width:100%; height:52px; padding:0; list-style:none;}
-/* .telecom ul.radio li:first-child {width:33.33%; margin-left:0;} */
+.telecom ul.radio {display:flex; width:100%; margin:0; padding:0; list-style:none;}
+/* .telecom ul.radio::after {content:""; display:block; height:0; clear:both;} */
+.telecom ul.radio li {display:block; float:left; position:relative; width:100%; height:52px; margin:0 0 0 -1px; padding:0; list-style:none;}
+.telecom ul.radio li:first-child {margin-left:0;}
 .telecom ul.radio li input {width:0; height:0; margin:0; padding:0; border:0;}
 .telecom ul.radio li input + label {
 	display:flex; justify-content:center; align-items:center;
 	position:absolute; top:0; left:0; width:100%; height:100%;
-	background-repeat:no-repeat;
-	background-position:50%;
-	background-size:90px auto;
-	border:1px solid #ddd; 
-	border-radius:10px;
-	font-size:0; cursor:pointer;
+	border:1px solid #ddd; font-size:0; cursor:pointer;
 }
-/* .telecom ul.radio li:first-child input + label {border-radius:5px 0 0 5px;}
-.telecom ul.radio li:last-child input + label {border-radius:0 5px 5px 0;} */
-.telecom ul.radio li input[type=radio]:checked + label {border-color:#ff3245; border-width:1.6px; z-index:1;}
-.telecom ul.radio li input.telCdRadioSkt + label {background-image:url('../images/common/SKT_OFF.png');} /* 이미지 색상 변경 요청시 _OFF로 교체후 하단 주석 제거 */
-.telecom ul.radio li input.telCdRadioKt + label {background-image:url('../images/common/KT_OFF.png');}
-.telecom ul.radio li input.telCdRadioLgt + label {background-image:url('../images/common/LGT_OFF.png');}
-.telecom ul.radio li input.telCdRadioSkt:checked + label {background-image:url('../images/common/SKT_ON.png');}
+.telecom ul.radio li:first-child input + label {border-radius:6px 0 0 6px;}
+.telecom ul.radio li:last-child input + label {border-radius:0 6px 6px 0;}
+.telecom ul.radio li input[type=radio]:checked + label {border-color:#ff3245; border-width:1.5px; z-index:1;}
+/* .telecom ul.radio li input.telCdRadioSkt + label {background-image:url('../images/common/SKT_ON.png');}
+.telecom ul.radio li input.telCdRadioKt + label {background-image:url('../images/common/KT_ON.png');}
+.telecom ul.radio li input.telCdRadioLgt + label {background-image:url('../images/common/LGT_ON.png');} */
+/* .telecom ul.radio li input.telCdRadioSkt:checked + label {background-image:url('../images/common/SKT_ON.png');}
 .telecom ul.radio li input.telCdRadioKt:checked + label {background-image:url('../images/common/KT_ON.png');}
-.telecom ul.radio li input.telCdRadioLgt:checked + label {background-image:url('../images/common/LGT_ON.png')}
+.telecom ul.radio li input.telCdRadioLgt:checked + label {background-image:url('../images/common/LGT_ON.png')} */
+.telecom ul.radio li input[type=radio] + label span {display:block; position:absolute; top:0; right:0; width:100%; height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:90px auto;
+}
+.telecom ul.radio li input.telCdRadioKt + label span {background-image:url('../images/common/KT_ON.png');}
+.telecom ul.radio li input.telCdRadioSkt + label span {background-image:url('../images/common/SKT_ON.png');} /* 이미지 색상 변경 요청시 _OFF로 교체후 하단 주석 제거 */
+.telecom ul.radio li input.telCdRadioLgt + label span {background-image:url('../images/common/LGT_ON.png');}
+/* .telecom ul.radio li input[type=radio] + label {filter: grayscale(100%)}
+.telecom ul.radio li input[type=radio]:checked + label {filter: grayscale(0);} */
+
+/* .telecom ul.radio li input[type=radio] + label span {filter:brightness(1.2)}
+.telecom ul.radio li input[type=radio]:checked + label span {filter:brightness(1)} */
 @media screen and (max-width:320px) {
 	.telecom ul.radio li input + label {background-size:80px auto;}
 }

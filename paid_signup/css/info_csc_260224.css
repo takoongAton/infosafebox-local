@@ -171,11 +171,11 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 .telecom ul.radio li input.telCdRadioKt + label span {background-image:url('../images/common/KT_ON.png');}
 .telecom ul.radio li input.telCdRadioSkt + label span {background-image:url('../images/common/SKT_ON.png');} /* 이미지 색상 변경 요청시 _OFF로 교체후 하단 주석 제거 */
 .telecom ul.radio li input.telCdRadioLgt + label span {background-image:url('../images/common/LGT_ON.png');}
-.telecom ul.radio li input[type=radio] + label {filter: grayscale(100%)}
-.telecom ul.radio li input[type=radio]:checked + label {filter: grayscale(0);}
+/* .telecom ul.radio li input[type=radio] + label {filter: grayscale(100%)}
+.telecom ul.radio li input[type=radio]:checked + label {filter: grayscale(0);} */
 
-.telecom ul.radio li input[type=radio] + label span {filter:brightness(1.2)}
-.telecom ul.radio li input[type=radio]:checked + label span {filter:brightness(1)}
+/* .telecom ul.radio li input[type=radio] + label span {filter:brightness(1.2)}
+.telecom ul.radio li input[type=radio]:checked + label span {filter:brightness(1)} */
 @media screen and (max-width:320px) {
 	.telecom ul.radio li input + label {background-size:80px auto;}
 }
