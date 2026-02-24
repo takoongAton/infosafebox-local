@@ -823,7 +823,7 @@ var onloadCallback = function() {
 
 						<div class="inwrap">
 
-							<div class="signUp_form typeB" ><!-- typeB 추가 시 위치 변경 -->
+							<div class="signUp_form" ><!-- typeB 추가 시 위치 변경 -->
 
 								<div class="telecom">
 									<ul class="radio">
@@ -842,24 +842,6 @@ var onloadCallback = function() {
 									</ul>
 								</div>
 								<!-- // telecom -->
-
-								<div class="phoneNum">
-									<div><input type="tel" title="핸드폰 번호" class="inputMdn" maxlength="11" id="mdn02" placeholder="휴대폰번호를 입력하세요."></div>
-
-									<div class="certify_wrap">
-										<button type="button" id="submitBtn">
-											<span>확인</span>
-										</button>
-										<button type="button" id="re_submitBtn" style="display:none;"><span>재전송</span></button>
-									</div>
-								</div>
-								<!-- // phoneNum -->
-
-								<div id="auth_no_section" style="display:block;">
-									<input type="text" title="인증번호" id="authNo" onfocus="this.value=''" class="inputMdn" placeholder="인증번호를 입력하세요." maxlength="6" disabled="">
-									<span class="timer">3:00</span>
-								</div>
-								<!-- // auth_no_section -->
 
 								<div class="terms-agree">
 									<div class="all_agree" id="all_agree">
@@ -924,6 +906,23 @@ var onloadCallback = function() {
 								</div>
 								<!-- // terms-agree -->
 
+								<div class="phoneNum">
+									<div><input type="tel" title="핸드폰 번호" class="inputMdn" maxlength="11" id="mdn02" placeholder="휴대폰번호를 입력하세요."></div>
+
+									<div class="certify_wrap">
+										<button type="button" id="submitBtn">
+											<span>확인</span>
+										</button>
+										<button type="button" id="re_submitBtn" style="display:none;"><span>재전송</span></button>
+									</div>
+								</div>
+								<!-- // phoneNum -->
+
+								<div id="auth_no_section" style="display:block;">
+									<input type="text" title="인증번호" id="authNo" onfocus="this.value=''" class="inputMdn" placeholder="인증번호를 입력하세요." maxlength="6" disabled="">
+									<span class="timer">3:00</span>
+								</div>
+								<!-- // auth_no_section -->
 
 								<div class="confirm_wrap">
 									<button type="button" id="confirmBtn" disabled="disabled">
