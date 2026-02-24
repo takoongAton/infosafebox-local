@@ -20,6 +20,7 @@ button {border:0 none;}
 body {
 	font-family:-apple-system,'BlinkMacSystemFont', 'Noto Sans KR','Noto Sans CJK','Apple SD Gothic Neo', serif;
 	font-size:1em;
+	background-color:#ff6600;
 }
 
 @media screen and (max-width:320px) {
@@ -184,7 +185,7 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 
 /* 약관 동의 */
 .infosafebox_wrap .terms-agree {overflow:hidden; border:1px solid #ddd; border-radius:6px;}
-.infosafebox_wrap .terms-agree a {display:block; color:#888; text-decoration:none; min-height:17px; line-height:17px; font-size:12px; letter-spacing:-0.025em;}
+.infosafebox_wrap .terms-agree a {display:block; color:#888; text-decoration:none; min-height:17px; line-height:17px; font-size:12px; letter-spacing:-0.05em;}
 .infosafebox_wrap .terms-agree label {display:inline-block; width:auto; color:#fff;}
 
 .infosafebox_wrap .terms-agree input[type="checkbox"] {position:absolute; top:0; left:0; width:0; height:0; margin:0; padding:0; border:0; vertical-align:top;}
@@ -240,7 +241,7 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 
 /* 유료 서비스 강조 */
 .infosafebox_wrap .charge_txt {margin-top:10px; padding:0 20px; color:#ff0000; text-align:center;}
-.infosafebox_wrap .charge_txt p {color:#ff0000; font-size:13px; line-height:19px; font-weight:700; letter-spacing:-0.025em;}
+.infosafebox_wrap .charge_txt p {color:#ff0000; font-size:13px; line-height:19px; font-weight:700; letter-spacing:-0.05em;}
 .infosafebox_wrap .charge_txt button {height:52px;}
 .infosafebox_wrap .charge_txt button span {color:#aaa; font-size:13px; line-height:24px; font-weight:400;}
 @media screen and (min-width:720px) {
