@@ -144,8 +144,8 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 /* 통신사 선택 */
 .telecom ul.radio {display:flex; width:100%; margin:0; padding:0; list-style:none;}
 /* .telecom ul.radio::after {content:""; display:block; height:0; clear:both;} */
-.telecom ul.radio li {display:block; float:left; position:relative; width:100%; height:56px; height:3.5em; margin:0 0 0 -1px; padding:0; list-style:none;}
-/* .telecom ul.radio li:first-child {width:33.33%; margin-left:0;} */
+.telecom ul.radio li {display:block; float:left; position:relative; width:100%; height:48px; margin:0 0 0 -1px; padding:0; list-style:none;}
+.telecom ul.radio li:first-child {margin-left:0;}
 .telecom ul.radio li input {width:0; height:0; margin:0; padding:0; border:0;}
 .telecom ul.radio li input + label {
 	display:flex; justify-content:center; align-items:center;
