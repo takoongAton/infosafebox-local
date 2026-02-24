@@ -20,6 +20,7 @@ button {border:0 none;}
 body {
 	font-family:-apple-system,'BlinkMacSystemFont', 'Noto Sans KR','Noto Sans CJK','Apple SD Gothic Neo', serif;
 	font-size:1em;
+	overflow-x:hidden
 }
 
 @media screen and (max-width:320px) {
