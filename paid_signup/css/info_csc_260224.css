@@ -127,7 +127,7 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 
 
 /* 통신사 선택 이하 form */
-.signUp_form {flex:1; display:flex; flex-direction:column; gap:13px 0; width:100%;}
+.signUp_form {flex:1; display:flex; flex-direction:column; gap:14px 0; width:100%;}
 .signUp_form.typeB .telecom {order:-1; transition:order 0.4s ease;}
 .signUp_form.typeB .terms-agree {order:0; transition:order 0.4s ease;}
 .signUp_form.typeB .phoneNum {order:-1; transition:order 0.4s ease;}
