@@ -139,13 +139,6 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 .signUp_form.typeC .phoneNum div {width:100%;}
 .signUp_form.typeC .phoneNum input,
 .signUp_form.typeC .phoneNum button {width:100%;}
-.signUp_form.typeC .phoneNum input:-webkit-autofill,
-.signUp_form.typeC .phoneNum input:-webkit-autofill:hover, 
-.signUp_form.typeC .phoneNum input:-webkit-autofill:focus, 
-.signUp_form.typeC .phoneNum input:-webkit-autofill:active {
-    /* 배경색을 흰색으로 고정 (원하는 색상으로 변경 가능) */
-    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
-}
 
 
 
@@ -239,6 +232,13 @@ header a span::after {content:""; display:block; position:absolute; right:0; top
 /* .phoneNum input:focus {border:1px solid #ff6600 !important; }
 .phoneNum input.focus {border:1px solid #ff6600; border-color:#ff6600;} */
 .phoneNum input::placeholder {color:#aaa; font-size:16px; line-height:inherit; font-weight:400;}
+.phoneNum input:-webkit-autofill,
+.phoneNum input:-webkit-autofill:hover, 
+.phoneNum input:-webkit-autofill:focus, 
+.phoneNum input:-webkit-autofill:active {
+    /* 배경색을 흰색으로 고정 (원하는 색상으로 변경 가능) */
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
 
 
 
