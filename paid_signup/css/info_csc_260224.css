@@ -29,6 +29,9 @@ body {
 
 /* 전체 틀 */
 .infosafebox_wrap {min-width:280px; max-width:908px; margin:0 auto; background-color:#fff;}
+@media screen and (min-width:720px) {
+	.infosafebox_wrap {border:1px solid #ddd;}
+}
 /* .signUp_section {} */
 .signUp_aside {}
 .signUp_aside picture {display:block; max-width:708px; margin:0 auto; font-size:0;}
@@ -69,7 +72,7 @@ body {
 
 
 /* 상단 */
-header {display:flex; justify-content:space-between; align-items:center; position:relative; padding:5px 12px; border:1px solid #ebebeb; background-color:#fff;}
+header {display:flex; justify-content:space-between; align-items:center; position:relative; padding:5px 12px; border-bottom:1px solid #ebebeb; background-color:#fff;}
 header h1 {display:flex; justify-content:flex-start; align-items:center; gap:0 6px; margin:0; font-size:14px; letter-spacing:-0.025em;}
 header h1 strong {display:block; color:#000;}
 header h1 p {color:#ff0000; font-weight:400;}
