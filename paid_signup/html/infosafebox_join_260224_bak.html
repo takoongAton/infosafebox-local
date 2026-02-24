@@ -7,7 +7,7 @@
 	<meta http-equiv="Expires" content="now">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=contain, target-densitydpi=medium-dpi">
-	<link rel="stylesheet" type="text/css" href="../css/info_csc_260224.css" />
+	<link rel="stylesheet" type="text/css" href="../css/info_csc_260224_test.css" />
 	
 	<script type="text/javascript" src="https://www.gstatic.com/recaptcha/releases/v1QHzzN92WdopzN_oD7bUO2P/recaptcha__ko.js" async=""></script>
 	<script type="text/javascript" src="https://www.google-analytics.com/analytics.js" async=""></script>
@@ -827,11 +827,11 @@ var onloadCallback = function() {
 
 								<div class="telecom">
 									<ul class="radio">
-										<li>
+										<li class="w20 mR0">
 											<input type="radio" id="divide01" name="telCdRadio" checked="" value="SKT" class="telCdRadioSkt">
 											<label class="fs20" for="divide01"><span>SKT</span></label>
 										</li>
-										<li>
+										<li class="mR0">
 											<input type="radio" id="divide03" name="telCdRadio" value="LGT" class="telCdRadioLgt">
 											<label class="fs20" for="divide03"><span>LG U+</span></label>
 										</li>
@@ -855,7 +855,7 @@ var onloadCallback = function() {
 								</div>
 								<!-- // phoneNum -->
 
-								<div id="auth_no_section" style="display:none;">
+								<div id="auth_no_section" style="display:block;">
 									<input type="text" title="인증번호" id="authNo" onfocus="this.value=''" class="inputMdn" placeholder="인증번호를 입력하세요." maxlength="6" disabled="">
 									<span class="timer">3:00</span>
 								</div>
@@ -1195,7 +1195,7 @@ layers.forEach(function(alertItem){
 	})
 })
 
-/*
+/* pc화면에서는 슬라이드 배너 숨기기 */
 if (navigator.userAgentData) {
     const isMobile = navigator.userAgentData.mobile;
     console.log(isMobile ? "모바일 접속" : "PC 접속");
@@ -1203,7 +1203,6 @@ if (navigator.userAgentData) {
 		document.querySelector(".form_slide_wrap").style.display = "none";
 	}
 }
-*/
 </script>
 <style>
 .layer,.dim {display:none !important;}
