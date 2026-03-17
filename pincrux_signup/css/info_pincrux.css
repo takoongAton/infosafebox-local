@@ -85,7 +85,7 @@ div.dim {position:fixed; top:0; right:0; bottom:0; left:0; background-color:rgba
 .layer.alert {position:fixed; top:50%; left:50%; width:284px; background-color:#fff; border-radius:6px; overflow:hidden; transform:translate(round(to-zero, -50%, 1px),round(to-zero, -50%, 1px)); z-index:1000; box-shadow:0 3px 6px rgba(0,0,0,0.16)}
 .layer.alert .layer_content {display:flex; flex-direction:column; gap:12px; padding:36px 18px; text-align:center;}
 .layer.alert .layer_content div.tit {color:#000; font-size:18px; line-height:27px; font-weight:700;}
-.layer.alert .layer_content p.txt {color:#000; font-size:14px; line-height:21px; font-weight:400; word-break:keep-all;}
+.layer.alert .layer_content p.txt {color:#000; font-size:16px; line-height:21px; font-weight:400; word-break:keep-all;}
 .layer.alert .btn_group {display:flex;}
 .layer.alert .btn_group button {width:100%; min-height:60px; padding:16px; border-top:0.5px solid #ddd; cursor:pointer;}
 .layer.alert .btn_group button span {font-size:16px; line-height:1em; font-weight:bold;}

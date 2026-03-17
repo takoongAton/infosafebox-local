@@ -862,8 +862,10 @@ button {cursor:pointer;}
 /* // 리워드 받기 */
 
 /* 하단 유의 사항 */
-.info_pincrux_footer {}
-.info_pincrux_footer ul {display:flex; flex-direction:column; gap:0.25em 0; width:100%; padding:20px; background-color:#eee;}
+.info_pincrux_footer {display:flex; flex-direction:column; gap:10px; padding:20px; background-color:#eee;}
+.info_pincrux_footer .tit {margin-top:5px;}
+.info_pincrux_footer .tit strong {display:block; color:#333; font-size:14px; line-height:1em;}
+.info_pincrux_footer ul {display:flex; flex-direction:column; gap:0.25em 0; width:100%;}
 .info_pincrux_footer ul li {}
 .info_pincrux_footer ul li p {position:relative; padding:0 0 0 0.6125em; color:var(--text-gray, #888) ; font-size:11px; line-height:1.125em;}
 .info_pincrux_footer ul li p::before {content:"•"; display:block; position:absolute; left:0; top:0; font-size:inherit; line-height:inherit; font-weight:inherit; text-align:center;}
@@ -989,9 +991,16 @@ button {cursor:pointer;}
 	<div class="info_pincrux_footer">
 		<ul>
 			<li><p>본 서비스는 ㈜아톤에서 운영합니다.</p></li>
-			<li><p>본 서비스는 가입 즉시 서비스가 게시되는 상품으로 청약철회가 불가능합니다.(전자상거래 등에서의 소비자보호에 관한 법률 제17조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p></li>
+			<li><p>본 서비스는 가입 즉시 서비스가 게시되는 상품으로 청약철회가 불가능합니다.(전자상거래 등에서의 소비자보호에 관한 법률 제16조 2항 5호에 따라 디지털 콘텐츠의 제공이 개시된 경우 청약철회를 제공하지 않습니다.)</p></li>
 			<li><p>본 서비스는 인포세이프박스 앱에서 이용 가능합니다.</p></li>
-			<li><p>가입/해지 문의 : ㈜아톤 고객센터 1800-4278 (평일 09:00~18:00, 점심시간 11:50~13:00)</p></li>
+			<li><p>가입/해지 문의 : ㈜아톤 고객센터 1644-1831 (평일 09:00~18:00, 점심시간 11:50~13:00)</p></li>
+		</ul>
+		<div class="tit"><strong>[이벤트 유의사항]</strong></div>
+		<ul>
+			<li><p>리워드는 서비스 가입 최초 1회에 한하여 지급됩니다. (휴대폰 번호 기준)</p></li>
+			<li><p>고객 부주의(휴대폰 번호 변경, 오류, 누락 등)로 인한 경품 미수신은 당사에서 책임지지 않습니다.</p></li>
+			<li><p>비정상적, 불법적 방법으로 이벤트에 참여하신 경우, 당첨자 추첨에서 제외될 수 있습니다.</p></li>
+			<li><p>본 이벤트는 제공업체의 사정에 의해 별도의 고지 없이 변경/중단될 수 있습니다.</p></li>
 		</ul>
 	</div>
 	<!-- // info_pincrux_footer -->
@@ -1017,6 +1026,53 @@ button {cursor:pointer;}
 </div>
 <!-- // layer alert-->
 
+
+<div class="layer alert">
+	<div class="layer_content">
+		<p class="txt">
+			이벤트 참여를 위하여<br />
+			‘<strong>개인정보 수집</strong>‘ 동의가 필요합니다.
+			<br /><br />
+			동의하시겠습니까?
+		</p>
+	</div>
+	<div class="btn_group">
+		<button type="button" class="btn_cancel"><span>닫기</span></button>
+		<button type="button" class="btn_next"><span>동의하기</span></button>
+	</div>
+	<!-- // layer_content -->
+</div>
+<!-- // layer alert-->
+
+
+<div class="layer alert">
+	<div class="layer_content">
+		<p class="txt">
+			<strong>이벤트 참여 정보 전송</strong>이<br />
+			완료되었습니다.
+		</p>
+	</div>
+	<div class="btn_group">
+		<!-- <button type="button" class="btn_cancel"><span>닫기</span></button> -->
+		<button type="button" class="btn_next"><span>동의하기</span></button>
+	</div>
+	<!-- // layer_content -->
+</div>
+<!-- // layer alert-->
+
+<div class="layer alert">
+	<div class="layer_content">
+		<div class="tit">이벤트 참여 완료</div>
+		<p class="txt">리워드 지급이 완료되었습니다.</p>
+	</div>
+	<div class="btn_group">
+		<!-- <button type="button" class="btn_cancel"><span>닫기</span></button> -->
+		<button type="button" class="btn_next"><span>확인</span></button>
+	</div>
+	<!-- // layer_content -->
+</div>
+<!-- // layer alert-->
+
 <div class="layer alert">
 	<div class="layer_content">
 		<div class="tit">팝업 타이틀</div>
@@ -1029,6 +1085,10 @@ button {cursor:pointer;}
 	<!-- // layer_content -->
 </div>
 <!-- // layer alert-->
+
+
+
+
 <!-- // 레이어팝업 샘플 -->
 
 
@@ -1189,41 +1249,67 @@ button {cursor:pointer;}
 
 
 <script>
-let layers = document.querySelectorAll(".layer");
-let alertCount = 0;
-layers.forEach(function(alertItem){
-	let btns = alertItem.querySelectorAll("button");
-	btns.forEach(function(btn){
-		btn.addEventListener("click", function(){
-			this.closest('.layer').style.display = "none";
-			// document.querySelector("div.layer_dim").style.display = "none";
-			console.log(this.closest('.layer').style.display);
+/**
+ * 레이어 팝업(.layer.alert) 및 배경 딤(.dim) 제어 로직
+ */
+(function() {
+    // 1. 주요 요소 선택
+    const alertLayers = document.querySelectorAll(".layer.alert");
+    const dimLayer = document.querySelector("div.dim");
 
-			layers.forEach(function(alert){
-				if(alert.style.display == "none"){
-					alertCount++
-					if(alertCount == layers.length) {
-						document.querySelector("div.dim").style.display = "none";
-					}
-				} 
-			})
-		})
-	})
-})
+    /**
+     * 모든 레이어(.layer.alert)의 가시성을 체크하여 .dim 레이어를 제어하는 함수
+     */
+    const updateDimVisibility = () => {
+        // 하나라도 화면에 보이는(.layer.alert) 요소가 있는지 확인
+        // (주의: style.display가 명시되지 않은 경우를 위해 getComputedStyle 사용)
+        const hasVisibleLayer = Array.from(alertLayers).some(layer => {
+            return window.getComputedStyle(layer).display !== "none";
+        });
 
-/*
-if (navigator.userAgentData) {
-    const isMobile = navigator.userAgentData.mobile;
-    console.log(isMobile ? "모바일 접속" : "PC 접속");
-	if(!isMobile) {
-		document.querySelector(".form_slide_wrap").style.display = "none";
-	}
-}
-*/
+        // 보이는 알림 레이어가 하나도 없다면 dim 레이어 숨김 처리
+        if (!hasVisibleLayer && dimLayer) {
+            dimLayer.style.display = "none";
+        }
+    };
 
-document.querySelector("#test_privacy").addEventListener("click", function(){
-	document.querySelector("#privacy01").style.display = "block";
-})
+    /**
+     * 레이어 내 버튼 클릭 이벤트 이벤트 등록
+     */
+    alertLayers.forEach(alertItem => {
+        const btns = alertItem.querySelectorAll("button");
+        
+        btns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                // 클릭한 레이어 닫기
+                alertItem.style.display = "none";
+                // 전체 가시성 상태에 따라 dim 제어
+                updateDimVisibility();
+            });
+        });
+    });
+
+    // 개인정보 약관 팝업 노출 처리
+    const testPrivacyBtn = document.querySelector("#test_privacy");
+    const privacyLayer = document.querySelector("#privacy01");
+    
+    if (testPrivacyBtn && privacyLayer) {
+        testPrivacyBtn.addEventListener("click", function() {
+            privacyLayer.style.display = "block";
+            // 약관 팝업 시에도 dim이 보여야 할 경우 처리
+            if (dimLayer) dimLayer.style.display = "block";
+        });
+        
+        // 약관 팝업 닫기 버튼 대응
+        const closeBtn = privacyLayer.querySelector(".btn_close");
+        if (closeBtn) {
+            closeBtn.addEventListener("click", function() {
+                privacyLayer.style.display = "none";
+                updateDimVisibility();
+            });
+        }
+    }
+})();
 </script>
 
 <style>
