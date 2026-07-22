@@ -37,14 +37,7 @@ body {
 .signUp_aside {padding:0}
 .signUp_aside picture {display:block; max-width:708px; margin:0 auto; font-size:0;}
 .signUp_aside img {width:100%; height:auto;}
-@media screen and (min-width:720px) {
-	.signUp_aside {padding:0 11%}
-}
 
-.signUp_cont {}
-@media screen and (min-width:720px) {
-	.signUp_cont {flex:1}
-}
 
 
 
