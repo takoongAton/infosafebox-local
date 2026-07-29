@@ -50,14 +50,15 @@
 				<div class="form_wrap">
 	
 					<div class="row">
-						<div class="tit"><strong>문의유형</strong></div>
+						<div class="tit"><strong>문의 유형</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="select_set">
 									<select name="" id="">
 										<option value="문의 유형을 선택하세요." selected="" disabled="" hidden="">문의 유형을 선택하세요.</option>
-										<option value="문의 유형 선택1">문의 유형 선택1</option>
-										<option value="문의 유형 선택2">문의 유형 선택2</option>
+										<option value="서비스 해지/환불 문의">서비스 해지/환불 문의</option>
+										<option value="서비스 이용 문의">서비스 이용 문의</option>
+										<option value="기타">기타</option>
 									</select>
 								</div>
 							</div>
@@ -69,7 +70,7 @@
 	
 	
 					<div class="row">
-						<div class="tit"><strong>문의내용</strong></div>
+						<div class="tit"><strong>문의 내용</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="ipt_set">
@@ -94,11 +95,12 @@
 					</div>
 
 					<div class="row">
-						<div class="tit"><strong>E-MAIL</strong></div>
+						<div class="tit"><strong>이메일 주소</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">
 								<div class="ipt_set">
-									<input type="text" placeholder="이메일을 입력하세요.">
+									<!-- <input type="text" placeholder="이메일을 입력하세요."> -->
+									<input type="email" name="" id="" placeholder="이메일을 입력하세요.">
 								</div>
 							</div>
 
@@ -109,19 +111,19 @@
 					</div>
 	
 					<div class="row">
-						<div class="tit"><strong>휴대폰번호</strong></div>
+						<div class="tit"><strong>휴대폰 번호</strong></div>
 						<div class="ipt_form">
 							<div class="ipt_wrap">								
 								<div class="select_set" style="width:180px;">
 									<select name="" id="">
 										<option value="통신사" selected="" disabled="" hidden="">통신사</option>
 										<option value="SKT">SKT</option>
-										<option value="LG U+">LG U+</option>
 										<option value="KT">KT</option>
+										<option value="LG U+">LG U+</option>
 									</select>
 								</div>
 								<div class="ipt_set">
-									<input type="text" placeholder="휴대폰번호를 입력하세요.">
+									<input type="tel" placeholder="휴대폰번호를 입력하세요." maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
 								</div>
 							</div>
 							<div class="form_alert">
@@ -190,7 +192,7 @@
 				</div>
 				<div class="customer">
 					<dl>
-						<dt>고객센터 1800-4278</dt>
+						<dt>고객센터 1644-1831</dt>
 						<dd>
 							평일 09:00 - 18:00<br />
 							(점심시간 제외,주말/공휴일 휴무) 
@@ -210,7 +212,7 @@
 	<ul>
 		<li><a href="./index.html#section0">서비스 소개</a></li>
 		<li><a href="./index.html#section2">서비스 이용방법</a></li>
-		<li><a href="./index.html#section3">서비스 해지</a></li>
+		<li><a href="./index.html#section3">서비스 해지/환불</a></li>
 		<li><a href="notice_list.html">공지사항</a></li>
 		<li><a href="customer.html" class="active"><span>1:1 문의</span></a></li>
 	</ul>
@@ -227,13 +229,17 @@
 		</div>
 		<div class="layer_content">
 
-			<div class="txt_content">
-				개인정보 수집 동의 관련 내용이 들어갑니다.<br />
-				내용이 들어갑니다.
-				내용이 들어갑니다.
-				내용이 들어갑니다.
-				체크박스 옆 텍스트 클릭시 팝업 뜸.
-			</div>
+			<div class="txt_content">(주)아톤은 1:1문의 신청을 처리하기 위해 다음과 같이 개인정보를 수집하여 이용하며, 이용자의 개인정보를 안전하게 취급하는데 최선을 다하고 있습니다.
+
+1. 수집항목
+- 이메일주소, 통신사, 휴대폰번호
+
+2. 수집 및 이용 목적
+- 1:1 문의 내용 확인, 처리 및 답변
+※ 이 외의 용도로는 사용하지 않습니다.
+
+3. 보유기간
+- 신청일로부터 1년간 보관</div>
 			<!-- // txt_content -->
 
 			<!-- <div class="btn_group">

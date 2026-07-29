@@ -26,7 +26,7 @@
 			<ul class="gnb" id="menu">
 				<li data-menuanchor="page2"><a href="./index.html#section0" class="active"><span>서비스 소개</span></a></li>
 				<li data-menuanchor="page3"><a href="./index.html#section2"><span>서비스 이용방법</span></a></li>
-				<li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 가입/해지</span></a></li>
+				<li data-menuanchor="page4"><a href="./index.html#section3"><span>서비스 해지/환불</span></a></li>
 				<li data-menuanchor="page5"><a href="notice_list.html"><span>공지사항</span></a></li>
 				<li><a href="customer.html"><span>1:1 문의</span></a></li>
 			</ul>
@@ -169,12 +169,12 @@
 	<div class="section" id="section3">
 
 		<div class="unaccount_wrap">
-			<div class="tit"><strong>인포세이프박스 서비스 가입/해지</strong></div>
+			<div class="tit"><strong>인포세이프박스 서비스 해지/환불</strong></div>
 			<!-- <p class="error_txt">현재 LG U+, KT 고객만 가입 가능합니다.</p> -->
 
-			<div class="signTab">
-				<button type="button" class="active"><span>서비스 가입</span></button>
-				<button type="button"><span>서비스 해지</span></button>
+			<div class="signTab" style="display: none;">
+				<button type="button"><span>서비스 가입</span></button>
+				<button type="button" class="active"><span>서비스 해지</span></button>
 			</div>
 
 
@@ -209,7 +209,7 @@
 					<!-- // telecoms -->
 
 
-					<div class="agree_wrap">
+					<div class="agree_wrap" style="display:none;">
 						<div class="row">
 							<strong>약관 동의</strong>
 							<div class="check_wrap">
@@ -280,14 +280,14 @@
 						<div class="item">
 							<strong class="tit">휴대폰 번호</strong>
 							<div class="ipt_set">
-								<input type="text" placeholder="휴대폰번호를 입력하세요.">
+								<input type="tel" placeholder="휴대폰번호를 입력하세요." maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
 							</div>
 							<button type="button" disabled><span>인증요청</span></button>	
 						</div>
 						<div class="item">
 							<strong class="tit">인증번호</strong>
 							<div class="ipt_set">
-								<input type="text" placeholder="인증번호를 입력하세요.">
+								<input type="tel" placeholder="인증번호를 입력하세요." maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
 								<span class="timer">유효시간 03:00</span>
 							</div>
 							<!-- <button type="button" disabled><span>시간연장</span></button> -->
@@ -319,17 +319,17 @@
 							<strong>통신사 선택</strong>
 							<div class="check_wrap">
 								<label>
-									<input type="radio" name="telecom02" disabled />
+									<input type="radio" name="telecom02" checked />
 									<span class="checkmark"></span>
 									<span class="txt">SKT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom02" disabled/>
+									<input type="radio" name="telecom02"/>
 									<span class="checkmark"></span>
 									<span class="txt">KT</span>
 								</label>
 								<label>
-									<input type="radio" name="telecom02" checked/>
+									<input type="radio" name="telecom02" />
 									<span class="checkmark"></span>
 									<span class="txt">LG U+</span>
 								</label>
@@ -343,15 +343,15 @@
 						<div class="item">
 							<strong class="tit">휴대폰 번호</strong>
 							<div class="ipt_set">
-								<input type="text" placeholder="휴대폰번호를 입력하세요.">
+								<input type="tel" placeholder="휴대폰번호를 입력하세요." maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
 							</div>
 							<button type="button" disabled><span>인증요청</span></button>	
 						</div>
 						<div class="item">
 							<strong class="tit">인증번호</strong>
 							<div class="ipt_set">
-								<input type="text">
-								<span class="timer">00:00</span>
+								<input type="tel" placeholder="인증번호를 입력하세요." maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+								<span class="timer">(유효시간 03:00)</span>
 							</div>
 							<!-- <button type="button" disabled><span>시간연장</span></button> -->
 						</div>
@@ -434,7 +434,7 @@
 						</div>
 						<div class="customer">
 							<dl>
-								<dt>고객센터 1800-4278</dt>
+								<dt>고객센터 1644-1831</dt>
 								<dd>
 									평일 09:00 - 18:00<br />
 									(점심시간 제외,주말/공휴일 휴무) 
@@ -579,7 +579,7 @@
 	<ul>
 		<li><a href="./index.html#section0">서비스 소개</a></li>
 		<li><a href="./index.html#section2">서비스 이용방법</a></li>
-		<li><a href="./index.html#section3">서비스 해지</a></li>
+		<li><a href="./index.html#section3">서비스 해지/환불</a></li>
 		<li><a href="notice_list.html">공지사항</a></li>
 		<li><a href="customer.html">1:1 문의</a></li>
 	</ul>
@@ -589,7 +589,7 @@
 
 
 
-<div class="layer alert" style="display:none;">
+<div class="layer alert">
 	<div class="inner">
 		<div class="layer_content">
 			<p class="txt">이미 가입되어있는 번호입니다.</p>
@@ -678,7 +678,7 @@ $(".img_mobile").slick({
 /* // 이미지 슬라이드 */
 
 
-/* 가입/해지 탭 */
+/* 해지/환불 탭 */
 let signTabs = document.querySelectorAll(".signTab button");
 let tabContents = document.querySelectorAll(".sign_wrap .tab_content");
 
@@ -697,7 +697,7 @@ signTabs.forEach(function (item, index) {
 
 let ddd = document.querySelector(".signTab button.active"); // 처음에 보여지고 싶은거.
 ddd.click();
-/* 가입/해지 탭 */
+/* 해지/환불 탭 */
 
 
 document.querySelectorAll(".check_item div.item label + span.txt").forEach(function(item){
@@ -734,7 +734,7 @@ privacy_agree.querySelector(".btn button").addEventListener("click", function(it
 	scrollUnFixed();
 })
 
-let testBtn = document.querySelector(".unaccount_wrap .tit"); // '인포세이프박스 가입/해지 텍스트' 를 버튼으로 테스트함.
+let testBtn = document.querySelector(".unaccount_wrap .tit"); // '인포세이프박스 해지/환불 텍스트' 를 버튼으로 테스트함.
 testBtn.addEventListener("click", function(){
 	privacy_agree.style.display = "block";
 	scrollFixed();
