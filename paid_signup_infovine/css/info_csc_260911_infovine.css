@@ -29,7 +29,7 @@ body {
 
 
 /* 전체 틀 */
-.infosafebox_wrap {min-width:280px; max-width:430px; margin:0 auto; padding-bottom:20px; background-color:#fff; overflow-x:hidden; font-family:'Noto Sans KR';}
+.infosafebox_wrap {min-width:280px; max-width:430px; margin:0 auto; padding-bottom:20px; background-color:#fff; font-family:'Noto Sans KR';}
 
 /* .signUp_section {} */
 .signUp_aside {padding:0 12px 12px;}
